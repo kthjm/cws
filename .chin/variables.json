@@ -1,0 +1,7 @@
+{
+  "workspace": "items",
+  "targets": [
+    "img-skewer",
+    "img-utmost"
+  ]
+}

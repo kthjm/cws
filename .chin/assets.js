@@ -1,11 +1,7 @@
 const inkscape = require('chin-plugin-inkscape').default
+const { workspace, targets } = require('./variables.json')
 
-const workspace = 'items'
-
-module.exports = [
-  'img-skewer',
-  'img-utmost',
-].map(name => ({
+module.exports = targets.map(name => ({
   put: `${workspace}/${name}/assets`,
   out: `${workspace}/${name}/.assets`,
   clean: true,
