@@ -12,6 +12,7 @@
     "icons": "chin -c .chin/icons",
     "upload:img-skewer": "chenv upload items/img-skewer/src bleljgfgacebahcokddmlkcgecogdlnp",
     "upload:img-utmost": "chenv upload items/img-utmost/src abbohnepahfjgjgiofdddgpjoadgbild",
+    "preupload": "yarn icons",
     "upload": "run-p upload:img-skewer upload:img-utmost"
   },
   "devDependencies": {
