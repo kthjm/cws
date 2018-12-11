@@ -8,6 +8,7 @@
     "packages/*"
   ],
   "scripts": {
+    "test": "echo \"Error: no test specified\"",
     "assets": "chin -c .chin/assets",
     "icons": "chin -c .chin/icons",
     "upload:img-skewer": "chenv upload items/img-skewer/src bleljgfgacebahcokddmlkcgecogdlnp",
