@@ -1,6 +1,6 @@
 {
   "name": "cws",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "license": "MIT",
   "private": true,
   "workspaces": [
@@ -11,8 +11,8 @@
     "test": "echo \"Error: no test specified\"",
     "assets": "chin -c .chin/assets",
     "icons": "chin -c .chin/icons",
-    "upload:img-skewer": "chenv upload items/img-skewer/src bleljgfgacebahcokddmlkcgecogdlnp",
-    "upload:img-utmost": "chenv upload items/img-utmost/src abbohnepahfjgjgiofdddgpjoadgbild",
+    "upload:img-skewer": "chenv upload -p items/img-skewer/src bleljgfgacebahcokddmlkcgecogdlnp",
+    "upload:img-utmost": "chenv upload -p items/img-utmost/src abbohnepahfjgjgiofdddgpjoadgbild",
     "preupload": "yarn icons",
     "upload": "run-p upload:img-skewer upload:img-utmost"
   },
