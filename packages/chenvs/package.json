@@ -1,0 +1,11 @@
+{
+  "name": "chenvs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": "bin.js",
+  "license": "MIT",
+  "devDependencies": {
+    "chenv": "^1.1.2",
+    "execa": "^1.0.0"
+  }
+}

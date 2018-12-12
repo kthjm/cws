@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "image skewer",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "author": "kthjm",
   "description": "Skewering all image in page you see, then download by a zip.",
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",

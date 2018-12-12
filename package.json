@@ -1,26 +1,33 @@
 {
-  "name": "cws",
-  "version": "0.0.10",
+  "name": "cws-items",
+  "version": "0.0.11",
   "license": "MIT",
   "private": true,
   "workspaces": [
     "items/*",
     "packages/*"
   ],
+  "cws": {
+    "base": "./items",
+    "items": {
+      "image-skewer": "bleljgfgacebahcokddmlkcgecogdlnp",
+      "image-utmost": {
+        "id": "abbohnepahfjgjgiofdddgpjoadgbild",
+        "input": "src"
+      }
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "assets": "chin -c .chin/assets",
-    "icons": "chin -c .chin/icons",
-    "upload:image-skewer": "chenv upload -p items/image-skewer/src bleljgfgacebahcokddmlkcgecogdlnp",
-    "upload:image-utmost": "chenv upload -p items/image-utmost/src abbohnepahfjgjgiofdddgpjoadgbild",
+    "assets": "chin -c chin.config.assets.js",
+    "icons": "chin -c chin.config.icons.js",
     "preupload": "yarn icons",
-    "upload": "run-p upload:image-skewer upload:image-utmost"
+    "upload": "yarn chenvs"
   },
   "devDependencies": {
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
     "@babel/register": "^7.0.0",
-    "chenv": "^1.1.1",
     "chin": "^3.1.3",
     "chin-plugin-compose": "^0.0.4",
     "chin-plugin-convert-svg": "^0.0.3",
