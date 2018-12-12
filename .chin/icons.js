@@ -13,7 +13,7 @@ module.exports = [].concat(
   ...targets.map(name =>
     sizes.map((size, index) => ({
       put: `${workspace}/${name}/icons`,
-      out: `${workspace}/${name}/src/.icons`,
+      out: `${workspace}/${name}/src/icons`,
       clean: index === 0,
       processors: {
         svg: compose([

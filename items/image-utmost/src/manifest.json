@@ -1,14 +1,14 @@
 {
   "manifest_version": 2,
   "name": "image utmost",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "author": "kthjm",
   "description": "image seen in chrome is transformed to utmost (even gif). They can be downloaded by a zip.",
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "icons": {
-    "16": "./.icons/16.png",
-    "48": "./.icons/128.png",
-    "128": "./.icons/128.png"
+    "16": "./icons/16.png",
+    "48": "./icons/128.png",
+    "128": "./icons/128.png"
   },
   "permissions": [
     "storage"
@@ -23,7 +23,7 @@
     "persistent": false
   },
   "browser_action": {
-    "default_icon": "./.icons/16.png",
+    "default_icon": "./icons/16.png",
     "default_title": "image utmost"
   },
   "content_scripts": [{
