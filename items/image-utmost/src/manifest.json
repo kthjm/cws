@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "image utmost",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "author": "kthjm",
   "description": "image seen in chrome is transformed to utmost (even gif). They can be downloaded by a zip.",
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
