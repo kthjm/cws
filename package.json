@@ -8,7 +8,7 @@
     "packages/*"
   ],
   "chenv": {
-    "alias": {
+    "items": {
       "image-skewer": {
         "src": "./items/image-skewer/src",
         "id": "bleljgfgacebahcokddmlkcgecogdlnp"
@@ -30,7 +30,7 @@
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
     "@babel/register": "^7.0.0",
-    "chenv": "^1.2.2",
+    "chenv": "^1.2.3",
     "chin": "^3.1.3",
     "chin-plugin-compose": "^0.0.4",
     "chin-plugin-convert-svg": "^0.0.3",
