@@ -1,13 +1,14 @@
 const inkscape = require('chin-plugin-inkscape').default
-const { cws } = require('./package.json')
+const { join } = require('path')
+const { chenv } = require('./package.json')
 
-const { base, items } = cws
+const width = 2000
 
-module.exports = Object.keys(items).map(name => ({
-  put: `${base}/${name}/assets`,
-  out: `${base}/${name}/.assets`,
+module.exports = Object.values(chenv.alias).map(({ src }) => ({
+  put: join(src, '../assets'),
+  out: join(src, '../.assets'),
   clean: true,
   processors: [
-    ['svg2png', { svg: inkscape('png', { width: 2000 }) }]
+    ['svg2png', { svg: inkscape('png', { width }) }]
   ]
 }))
