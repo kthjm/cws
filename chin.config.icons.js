@@ -15,7 +15,7 @@ const puppeteer = {
 }
 
 module.exports = [].concat(
-  ...Object.values(chenv.alias).map(({ src }) => {
+  ...Object.values(chenv.items).map(({ src }) => {
     const put = join(src, '../icons')
     const out = join(src, 'icons')
     return sizes.map((size, index) => {

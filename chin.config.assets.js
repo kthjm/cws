@@ -4,7 +4,7 @@ const { chenv } = require('./package.json')
 
 const width = 2000
 
-module.exports = Object.values(chenv.alias).map(({ src }) => ({
+module.exports = Object.values(chenv.items).map(({ src }) => ({
   put: join(src, '../assets'),
   out: join(src, '../.assets'),
   clean: true,
