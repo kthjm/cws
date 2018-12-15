@@ -1,6 +1,6 @@
 const compose = require('chin-plugin-compose')
 const convertsvg = require('chin-plugin-convert-svg')
-const filename = require('chin-plugin-filename')
+const rename = require('chin-plugin-rename').default
 const { join } = require('path')
 const { chenv } = require('./package.json')
 
@@ -22,7 +22,7 @@ module.exports = [].concat(
       const clean = index === 0
       const svg = compose([
         convertsvg('.png', { puppeteer, height: size }),
-        filename({ name: size }),
+        rename({ name: `${size}` }),
       ])
       return { put, out, clean, processors: { svg } }
     })
